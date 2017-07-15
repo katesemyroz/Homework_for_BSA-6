@@ -1,0 +1,34 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<div id="header">
+	  	<div id="search_area">
+	    	<input placeholder="Search..."  id="search" class="header_elem">
+	    	<img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" alt="Search_image" class="header_elem">
+	  	</div>
+	</div>
+	<div id="popup">
+		<form name="form_with_tags" id="popup-content" >
+			<p>You can choose some tags!</p>
+			<p><input type="checkbox" class="tags" value="Sport"> Sport</p>
+			<p><input type="checkbox" class="tags" value="Politics"> Politics</p>
+			<p><input type="checkbox" class="tags" value="Food"> Food</p>
+			<p><input type="checkbox" class="tags" value="Business"> Business</p>
+			<p><input type="checkbox" class="tags" value="Tech"> Tech</p>
+			<p><input type="checkbox" class="tags" value="Culture"> Culture</p>
+			<p><input type="checkbox" class="tags" value="Showbiz"> Showbiz</p>
+			<button type="button" onclick="saveTags()">Ok</button>
+		</form>
+	</div>
+	<div id="Content">
+		<ul id="Post_list">
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

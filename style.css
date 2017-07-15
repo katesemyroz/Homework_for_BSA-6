@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC');
+
+html,body {
+	font-family: 'Cormorant SC', serif;
+	font-weight: bold;
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+li{
+	list-style-type: none;
+}
+
+#header{
+	background-color: white;
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	padding: 10px 0px;
+	border-bottom: 1px solid;
+}
+
+.header_elem{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#search_area input{
+	width: 350px;
+	height: 24px;
+	border-radius: 10px;
+}
+
+#search_area img{
+	width:40px;
+	height: 40px;
+}
+
+#content ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.post{
+	margin: 0px 10%;
+	padding-bottom: 20px;
+	border-bottom: 1px solid;
+	height: 250px;
+}
+
+.image{
+	float: left;
+	margin: auto 20px;
+}
+
+.tags li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+h2{
+	text-align: center;
+}
+
+.removeButton{
+	float: right;
+	margin:0px;
+	border-radius: 5px;
+	height: 25px;
+	width: 100px;
+}
+
+.removeButton, .tags{
+	display: inline-flex;
+}
+
+#popup{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:99999px;
+}
+
+#popup-content{
+    margin:40px auto;
+    width:400px;
+    height: 400px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
