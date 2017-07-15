@@ -67,7 +67,7 @@ function loadOnePost(Data, post_number){
 		removeButton.className = "removeButton";
 		removeButton.innerHTML = "Remove post";
 		removeButton.type = "button";
-		removeButton.name = Data[post_number].title;
+		removeButton.name = Data[post_number].createdAt;
 		removeButton.addEventListener("click", removePost);
 		new_post.appendChild(removeButton);	
 }
@@ -155,13 +155,13 @@ function sortByDate(post1, post2){
 
 
 function removePost(){
-	let titleOfPost = this.name;
+	let dateOfPost = this.name;
 	let post = this.parentNode;
 	let parentElem = document.getElementById('Post_list');
 	parentElem.removeChild(post);
 
 	for (let i = 0; i < num_of_all_posts; i++){
-		if (allData.data[i].title == titleOfPost){
+		if (allData.data[i].createdAt == dateOfPost){
 			allData.data.splice(i,1);
 			break;
 		}
